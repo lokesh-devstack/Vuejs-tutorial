@@ -1,8 +1,13 @@
 <template>
 
     <div class="container">
-        <h1> My cool Vue App </h1>
-        <button> Add Task</button>
+        <Header title="Vue App" action="Get Started" color="red" bgcolor="black"/>
+        
+
+    </div>
+        <div class="container">
+        <Header title="Book App" action="Add books"/>
+        
 
     </div>
 
@@ -10,8 +15,13 @@
 
 <script>
 
+import Header from './Header.vue'
+
 export default {
-    name: "App"
+    name: "App",
+    components: {
+        Header
+    }
 }
 
 </script>
@@ -27,7 +37,7 @@ export default {
         border: 1px solid steelblue;
         padding: 30px;
         max-width: 500px;
-        margin: auto;
+        margin: 20px auto;
     }
 
     button {
